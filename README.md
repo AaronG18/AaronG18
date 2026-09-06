@@ -4,11 +4,10 @@
 end, from the retrieval pipeline and agent runtime to the API and dashboard
 behind them.
 
-My work spans three layers, and most of what I ship crosses all three:
-**back-end foundations** (REST APIs, ETL pipelines, IoT systems), **full-stack
-+ AI** (RAG systems, diagnostic tooling, visualization platforms), and
-**full-stack + AI agents** (multi-stage LLM orchestration, autonomous
-workflows, agent-served products).
+My work spans three layers, and most of what I ship crosses all three: back-end
+foundations (REST APIs, ETL pipelines, IoT systems), full-stack + AI (RAG systems,
+diagnostic tooling, visualization platforms), and full-stack + AI agents
+(multi-stage LLM orchestration, autonomous workflows, agent-served products).
 
 ---
 
@@ -81,12 +80,9 @@ end-to-end, backend through frontend:
 ### By the numbers
 
 - **4+ years** building AI and full-stack systems
-- **3** production AI & analytics platforms built 0 → 1 for enterprise clients
+- **3** production AI & analytics platforms built 0 → 1
 - **20+** autonomous LLM workflows in production
-- **290M+** records in a layered ClickHouse warehouse (97-99% cache hit rate)
 - **70+** services and edge functions under CI/CD
-- **40+** edge functions with real-time SSE streaming
-- **30+** REST APIs shipped behind a single FastAPI backend
 
 ---
 
