@@ -93,7 +93,7 @@ end-to-end, backend through frontend:
 ### Reach out
 
 - GitHub: [@AaronG18](https://github.com/AaronG18)
-- (add your other links here)
+- Email: aaron18g@outlook.com
 
 <sub>:wave: Building something with agents, RAG, or the infrastructure
 around them? Let's talk.</sub>
