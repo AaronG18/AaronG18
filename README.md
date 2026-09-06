@@ -1,95 +1,162 @@
-# AaronG
+<div align="center">
 
-**Full-Stack & AI Engineer** — 4+ years building production AI systems end to
-end, from the retrieval pipeline and agent runtime to the API and dashboard
-behind them.
+# Hi there 👋
 
-My work spans three layers, and most of what I ship crosses all three: back-end
-foundations (REST APIs, ETL pipelines, IoT systems), full-stack + AI (RAG systems,
-diagnostic tooling, visualization platforms), and full-stack + AI agents
-(multi-stage LLM orchestration, autonomous workflows, agent-served products).
+</div>
 
----
+<div align="center">
 
-### What I work on
+## **AaronG**
 
-- **Multi-stage LLM orchestration** — intent classification → query planning
-  → entity resolution → SQL generation → response synthesis, with retry,
-  fallback and validation at every stage. Routes models by task complexity to
-  balance inference cost against response quality.
-- **Retrieval & RAG** — indexing large corpora into vector stores, retrieval
-  optimization, LLM chat interfaces, and the evaluation workflow that measures
-  whether retrieval is actually improving.
-- **Autonomous workflows** — 20+ LLM workflows that produce multi-page
-  PPTX/PDF decks with embedded charts, maps and business insights, cutting
-  analyst report production from days to minutes.
-- **Data platforms at scale** — layered ClickHouse warehouses over 290M+
-  records with multi-tier Redis caching (97-99% hit rate), sub-second LLM
-  context retrieval, and 10x faster API response on TB-scale datasets.
-- **Enterprise-grade delivery** — multi-tenant data isolation, enterprise
-  security compliance, and layered SQL safety (prompt constraints, zero raw
-  SQL exposure, post-generation validation).
-- **Real-time & streaming** — SSE streaming across edge functions for
-  sub-second perceived latency on complex analytical queries.
+</div>
+
+<div align="center">
+
+**Full-Stack & AI Engineer** — 4+ years building production AI systems end to end,
+from the retrieval pipeline and agent runtime to the API and dashboard behind them.
+
+</div>
+
+<br>
 
 ---
 
-### Tech I work with
+## 🚀 What I work on
 
-| Layer | Tools |
-|---|---|
-| LLMs & orchestration | LangGraph, LangChain, Claude, GPT-4, embedding models |
-| Agent memory | Mem0 (semantic, cross-session) |
-| Vector DB | Milvus |
-| Backend | Python · FastAPI · Flask · Django · DRF · REST APIs |
-| Data & warehousing | ClickHouse · PostgreSQL · MySQL · BigQuery · MongoDB |
-| Caching & messaging | Redis (multi-tier) · RabbitMQ · MQTT / EMQX · Modbus |
-| Frontend | React · Redux Toolkit · ECharts · Plotly · Jinja2 |
-| Validation & testing | Pydantic · pytest · Vitest · Playwright |
-| Cloud & DevOps | Docker / Compose · AWS ECS · Firebase (Hosting, Functions) · GitHub Actions · CI/CD |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 AI & LLM Engineering
+
+- Multi-stage **LLM orchestration** — intent classification → query planning → entity resolution → SQL generation → response synthesis, with retry, fallback and validation at every stage
+- **Model routing** by task complexity to balance inference cost against response quality
+- **20+ autonomous LLM workflows** that produce multi-page PPTX/PDF decks with embedded charts, maps and business insights
+- **RAG systems** — embedding pipelines, vector indexing, retrieval optimization, LLM chat interfaces, evaluation workflow
+- **Semantic memory layer** (Mem0) for cross-session context and personalization
+
+</td>
+<td width="50%" valign="top">
+
+### ⚙️ Backend & Data
+
+- **Backend** — Python · FastAPI · Flask · Django · DRF · REST APIs · 30+ APIs shipped behind a single FastAPI backend
+- **Data** — ClickHouse (layered warehouse) · PostgreSQL · MySQL · BigQuery · MongoDB · Databricks
+- **Caching & queues** — Redis (multi-tier) · RabbitMQ · MQTT/EMQX · Modbus
+- **Validation** — Pydantic · pytest · Vitest · Playwright
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🎨 Frontend & Visualization
+
+- **React** · Redux Toolkit · ECharts · Plotly · Jinja2
+- Centralized Python/Plotly platforms for **GB-scale multi-modal data analysis**
+- Thermal heatmaps, histograms, box plots for anomaly detection
+- 15+ enterprise analytics views across a single product
+
+</td>
+<td width="50%" valign="top">
+
+### ☁️ Platform & DevOps
+
+- **Docker** / Compose · **AWS ECS** · Firebase (Hosting + Functions)
+- **CI/CD** across 70+ services and edge functions — dev/staging/prod promotion, PR preview envs, zero-downtime deploys
+- **Real-time streaming** — SSE across 40+ edge functions for sub-second perceived latency
+- **IoT systems** — energy management with MQTT broker, Modbus sensors, automated control
+
+</td>
+</tr>
+</table>
 
 ---
 
-### Domain experience
+## 🛠️ Tech I work with
 
-Beyond the AI layer, I've shipped systems across these areas — each one
-end-to-end, backend through frontend:
+<p align="center">
 
-- **IoT & industrial systems** — energy management platforms orchestrating a
-  Django backend, PostgreSQL and an MQTT broker, ingesting sensor streams over
-  Modbus and MQTT, computing real-time consumption and savings, and issuing
-  automated control commands based on preset modes.
-- **ETL & data integration** — automated Python pipelines syncing commerce and
-  warehouse sources into MySQL and on to collaboration tooling, cutting manual
-  processing time by ~90%.
-- **Commerce & operations back-office** — Django REST APIs as the central data
-  hub for influencer/partner lifecycle management: profiles, collaboration
-  records, financial transactions, order tracking, logistics.
-- **Diagnostic & visualization tooling** — centralized Python/Plotly platforms
-  letting engineers analyze gigabytes of daily multi-modal test data, pinpoint
-  anomalies, and validate AI system performance; thermal heatmaps and
-  statistical charts (histograms, box plots) for anomaly detection.
-- **High-concurrency backends** — message queues for high-volume requests and
-  large-scale data exports.
-- **Product delivery** — Dockerized backends on managed container services,
-  front ends on edge hosting, with dev/staging/prod promotion, PR preview
-  environments, automated DB migrations and zero-downtime deploys.
+| | | | | |
+|:---:|:---:|:---:|:---:|:---:|
+| 🐍 **Python** | ⚡ **FastAPI** | 🌶️ **Flask** | 🎸 **Django** | 🔗 **REST APIs** |
+| 🧩 **LangGraph** | 🦜 **LangChain** | 🤖 **GPT-4 / Claude** | 🧬 **Embeddings** | 🧠 **Mem0** |
+| 🔍 **Milvus** | 🏛️ **ClickHouse** | 🐘 **PostgreSQL** | 🐬 **MySQL** | 📊 **BigQuery** |
+| 🍃 **MongoDB** | 📦 **Redis** | 🐰 **RabbitMQ** | 📡 **MQTT / EMQX** | ⚡ **Modbus** |
+| ⚛️ **React 19** | 🎨 **ECharts** | 📈 **Plotly** | 🧰 **Redux Toolkit** | 📝 **Jinja2** |
+| ✅ **Pydantic** | 🧪 **pytest / Vitest / Playwright** | 🐳 **Docker** | ☁️ **AWS ECS** | 🔥 **Firebase** |
+| 🔁 **GitHub Actions** | 🚀 **CI/CD** | 📡 **SSE** | 🔐 **Multi-tenant** | 🛡️ **Enterprise security** |
+
+</p>
 
 ---
 
-### By the numbers
+## 🌍 Domain experience
 
-- **4+ years** building AI and full-stack systems
-- **3** production AI & analytics platforms built 0 → 1
-- **20+** autonomous LLM workflows in production
-- **70+** services and edge functions under CI/CD
+Beyond the AI layer, I've shipped systems across these areas — each one end-to-end, backend through frontend:
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+#### ⚡ Energy & IoT
+
+Orchestration of Django backend, PostgreSQL and an MQTT broker; sensor streams over Modbus and MQTT; real-time consumption/savings computation; automated control via MQTT commands.
+
+</td>
+<td width="33%" valign="top">
+
+#### 🔄 ETL & Integration
+
+Python pipelines syncing commerce and warehouse sources into MySQL and on to collaboration tooling, cutting manual processing time by ~90%.
+
+</td>
+<td width="33%" valign="top">
+
+#### 🏪 Commerce Back-Office
+
+Django REST APIs as the central hub for the full partner lifecycle: profiles, collaboration records, financial transactions, order tracking, logistics.
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+#### 📊 Diagnostic & Visualization
+
+GB-scale multi-modal data analysis with heatmaps and statistical charts for anomaly detection.
+
+</td>
+<td width="33%" valign="top">
+
+#### 📨 High-Concurrency Backends
+
+Message queues handling high-volume requests and large-scale data exports.
+
+</td>
+<td width="33%" valign="top">
+
+#### 🚚 Product Delivery
+
+Containerized backends on managed container services, edge-hosted frontends, dev/staging/prod promotion with PR preview environments and zero-downtime deploys.
+
+</td>
+</tr>
+</table>
 
 ---
 
-### Reach out
+## 📫 Reach out
 
-- GitHub: [@AaronG18](https://github.com/AaronG18)
-- Email: aaron18g@outlook.com
+<p align="center">
 
-<sub>:wave: Building something with agents, RAG, or the infrastructure
-around them? Let's talk.</sub>
+[![GitHub](https://img.shields.io/badge/GitHub-@AaronG18-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaronG18)
+[![Email](https://img.shields.io/badge/Email-aaron18g@outlook.com-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:aaron18g@outlook.com)
+
+</p>
+
+<p align="center">
+
+<sub>🌊 Building something with agents, RAG, or the infrastructure around them? Let's talk.</sub>
+
+</p>
