@@ -76,7 +76,7 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 
 - Commented on **24 upstream issues** and **4 pull-request threads** in `langchain-ai/langgraph`: reproduction details, sync/async parity, cross-store consistency, and regression-test notes.
 - Where another contributor had a complete patch ready, I did QA and yielded the implementation rather than opening a competing PR.
-- Every change is documented in an English contribution-log issue on my fork (19 logs so far): [AaronG18/langgraph issues](https://github.com/AaronG18/langgraph/issues). Each log records the upstream link, what changed, quantitative evidence, and test results.
+- Every change is documented in an English contribution-log issue on my fork (20 logs so far): [AaronG18/langgraph issues](https://github.com/AaronG18/langgraph/issues). Each log records the upstream link, what changed, quantitative evidence, and test results.
 
 ---
 
