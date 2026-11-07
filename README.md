@@ -26,7 +26,11 @@ Everything below is work I submitted to an upstream project from my own fork: fi
 
 I also posted QA findings on [#49884](https://github.com/BerriAI/litellm/issues/49884) (Redis circuit breaker stuck in `HALF_OPEN` on a non-connectivity probe failure) and [#49805](https://github.com/BerriAI/litellm/issues/49805). On #49884 another contributor already had a complete patch and tests ready, so I yielded the implementation to them instead of competing.
 
-### langchain-ai/langgraph - September to October 2026 (25 pull requests, 4 issues)
+### langchain-ai/langgraph - September to November 2026 (26 pull requests, 4 issues)
+
+**SDK reliability (November 2026)**
+
+- [#9625](https://github.com/langchain-ai/langgraph/pull/9625) - `thread.output.with_timeout(s)` cancelled the stream's shared `_run_done` future. `_fetch()` passed `_wait_for_run_done()` straight into `asyncio.wait_for`, and that function awaits the shared future directly, so a timeout cancellation propagated into `_run_done` itself: the original `thread.output` then raised `CancelledError` forever and a later run failure was hidden. The fix wraps that wait in `asyncio.shield(...)`, matching the shield pattern already used elsewhere in the same module. One behavioural line plus a regression test that is red before the fix and green after; 80 stream tests pass. Fixes [#9609](https://github.com/langchain-ai/langgraph/issues/9609).
 
 Several of the 25 PRs are re-submissions of the same fix after the upstream issue-link bot closed the first one; the distinct work is grouped below.
 
@@ -70,7 +74,7 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 
 ## Triage, QA, and contribution records
 
-- Commented on **23 upstream issues** and **4 pull-request threads** in `langchain-ai/langgraph`: reproduction details, sync/async parity, cross-store consistency, and regression-test notes.
+- Commented on **24 upstream issues** and **4 pull-request threads** in `langchain-ai/langgraph`: reproduction details, sync/async parity, cross-store consistency, and regression-test notes.
 - Where another contributor had a complete patch ready, I did QA and yielded the implementation rather than opening a competing PR.
 - Every change is documented in an English contribution-log issue on my fork (19 logs so far): [AaronG18/langgraph issues](https://github.com/AaronG18/langgraph/issues). Each log records the upstream link, what changed, quantitative evidence, and test results.
 
@@ -80,8 +84,9 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 
 **None of these pull requests has been merged yet.**
 
-- `langchain-ai/langgraph` runs a `require-issue-link` bot that closes external PRs on the day they are opened unless the author is assigned to the linked issue. **24 of my 25 PRs were closed by that bot.** [#8868](https://github.com/langchain-ai/langgraph/pull/8868) is the one still open: after I was assigned to [#6798](https://github.com/langchain-ai/langgraph/issues/6798) it was reopened, and community review is complete - a reviewer found a real `state_keys` bug in the v2 streaming handler, I fixed it, and the same reviewer confirmed the fix; two further reviews verified the field filter and the rebase. It is waiting on maintainer review.
+- `langchain-ai/langgraph` runs a `require-issue-link` bot that closes external PRs on the day they are opened unless the author is assigned to the linked issue. **24 of the 25 September-October PRs were closed by that bot.** [#8868](https://github.com/langchain-ai/langgraph/pull/8868) is the one still open: after I was assigned to [#6798](https://github.com/langchain-ai/langgraph/issues/6798) it was reopened, and community review is complete - a reviewer found a real `state_keys` bug in the v2 streaming handler, I fixed it, and the same reviewer confirmed the fix; two further reviews verified the field filter and the rebase. It is waiting on maintainer review.
 - On `BerriAI/litellm`, [#49885](https://github.com/BerriAI/litellm/pull/49885) is open and [#49979](https://github.com/BerriAI/litellm/pull/49979) was closed as superseded. Both also require signing the BerriAI CLA.
+- [#9625](https://github.com/langchain-ai/langgraph/pull/9625) is open and mergeable (single commit, 2 files, +34/-1), but [#9609](https://github.com/langchain-ai/langgraph/issues/9609) is not yet assigned to me. I requested assignment on the issue; the `require-issue-link` bot may close this PR until a maintainer assigns it.
 
 ---
 
