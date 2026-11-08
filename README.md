@@ -141,3 +141,21 @@ targets passed the no-compete check:
   have an open placeholder PR; the 3 clean ones are feature/doc requests, not fixes.
 Sample of 32 placeholder PRs across deepeval/llama_index: 1 merged, 31 still open
 unmerged - the easy-issue pools are saturated with unreviewed PRs, not real merges.
+
+Follow-up (2026-11-09, no contribution submitted): checked the timing of our
+pending assignment requests on langchain-ai/langgraph #9620 and #9609. Both were
+posted 2026-11-07 (17:56Z and 15:59Z) - too recent to follow up, so no new
+comment was posted. Both issues remain unassigned and PRs #9642 / #9625 remain
+closed by the require-issue-link bot. Note: #9620 gained a competing claim on
+2026-11-08 09:23Z; our PR #9642 predates it (2026-11-08 01:47Z).
+
+Also scouted 38 React-ecosystem and Python-backend repos for merge-friendliness
+(CONTRIBUTING gates, CLA, triage bots, human-external merge share, clean issue
+pools). No PR opened. Findings: facebook/react merges essentially no external
+PRs (0 of last 20); vite and aiohttp run agent-scan bots that auto-close
+AI-flagged PRs; sqlalchemy's high external share is almost all docs typo
+fixes because code changes go through Gerrit, not GitHub PRs; litestar's
+apparent 44% was almost entirely dependabot (1 real human in 50). The two
+most workable were recharts (27 of last 50 merged PRs from real external
+humans, no CLA/assignment gate, 10 good-first-issues) and strawberry (6 of 50,
+but has a maybe-ai label policy and only stale/insider issues left clean).
