@@ -124,3 +124,20 @@ pursued and their assignment requests were withdrawn. Only #9620 remains active.
 Scouting note (2026-11-08, no contribution submitted): surveyed 20 upstream
 repos for merge-friendliness (governance bots, CLA gates, external-contributor
 merge share, open good-first-issue pools). No new PR was opened from this scan.
+
+Follow-up scouting (2026-11-08, still no contribution submitted): checked 4
+candidate upstreams for a genuinely unclaimed fix (issue comments + timeline
+cross-referenced PRs + open-PR search). No PR was opened, because none of the
+targets passed the no-compete check:
+- run-llama/llama_index: 119 open bug-like issues screened; every one either has
+  an open linked PR, a claim comment, or was already fixed. The 5 apparent clean
+  ones were workflows bugs whose code lives in run-llama/llama-agents with fixes
+  already open there, or an issue already fixed by PR #23287.
+- modelcontextprotocol/python-sdk: CONTRIBUTING + require-linked-issue.yml require
+  the PR author to be assigned to the linked issue (same gate as langgraph).
+- agno-agi/agno: a PR-triage bot auto-closes any PR whose linked issue lacks the
+  maintainer 'ready' label; two candidates were explicitly reserved by their reporter.
+- confident-ai/deepeval: no assignment/CLA gate, but 33 of 36 open issues already
+  have an open placeholder PR; the 3 clean ones are feature/doc requests, not fixes.
+Sample of 32 placeholder PRs across deepeval/llama_index: 1 merged, 31 still open
+unmerged - the easy-issue pools are saturated with unreviewed PRs, not real merges.
