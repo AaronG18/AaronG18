@@ -120,3 +120,7 @@ pursued); only #9620 remains active and awaits maintainer assignment
 #9581 was yielded to @ZhuLinsen (PR #9605). All yields posted as comments on
 2026-11-08; per the no-compete rule the 4 PRs (#9627/#9640/#9641/#9643) are not
 pursued and their assignment requests were withdrawn. Only #9620 remains active.
+
+Scouting note (2026-11-08, no contribution submitted): surveyed 20 upstream
+repos for merge-friendliness (governance bots, CLA gates, external-contributor
+merge share, open good-first-issue pools). No new PR was opened from this scan.
