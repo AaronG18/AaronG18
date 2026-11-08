@@ -101,22 +101,22 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 
 ---
 
-## langgraph batch - 2026-11-08 (5 fixes; PRs awaiting issue assignment)
+## langgraph batch - 2026-11-08 (5 drafts; 4 yielded, 1 active)
 
-Submitted to langchain-ai/langgraph from AaronG18/langgraph. Per langgraph's
-require-issue-link bot, each PR is closed with `missing-issue-link` until the
-linked issue is assigned to AaronG18; the bot reopens automatically once a
-maintainer assigns the issue. Assignment was requested on every issue; the PR
-state below is verified via API (not yet merged).
+Submitted to langchain-ai/langgraph from AaronG18/langgraph. Status verified via
+API on 2026-11-08. Per the no-compete rule, the 4 issues that already had other
+claimants/PRs were yielded (assignment requests withdrawn, related PRs not
+pursued); only #9620 remains active and awaits maintainer assignment
+(PR #9642 auto-reopens once assigned).
 
-| Issue | PR | Scope | Fix | PR state |
-|-------|----|-------|-----|----------|
-| #9603 | #9627 | cli | `langgraph.json` non-string python_version/node_version now raises a clear UsageError instead of AttributeError/TypeError | closed (bot, awaiting assign) |
-| #9591 | #9640 | langgraph | `draw_graph` initializes `deferred_nodes` before the loop so `get_graph()` works with list input_channels (was UnboundLocalError) | closed (bot, awaiting assign) |
-| #9592 | #9641 | prebuilt | `ValidationNode` returns an is_error ToolMessage for unknown tool names instead of KeyError | closed (bot, awaiting assign) |
-| #9620 | #9642 | sdk-py | `AsyncThreadStream.events` releases completed handles from `_open_handles` (was retained until session release) | closed (bot, awaiting assign) |
-| #9561 | #9643 | checkpoint-sqlite | `setup()` is idempotent (PRAGMA check before ALTER) so non-stdlib drivers (sqlcipher) do not leak OperationalError | closed (bot, awaiting assign) |
+| Issue | PR | Scope | Fix | Status |
+|-------|----|-------|-----|--------|
+| #9603 | #9627 (not pursued) | cli | non-string python_version/node_version -> clear UsageError | yielded to @Steve-20-ai (#9613) / @JY-M666 (#9616) |
+| #9591 | #9640 (not pursued) | langgraph | deferred_nodes init before draw loop | yielded to @kyo-zzz (fix ready) |
+| #9592 | #9641 (not pursued) | prebuilt | ValidationNode returns is_error ToolMessage | yielded to @JY-M666 |
+| #9620 | #9642 | sdk-py | AsyncThreadStream.events releases completed handles from `_open_handles` | ACTIVE - awaiting maintainer assignment |
+| #9561 | #9643 (not pursued) | checkpoint-sqlite | setup() idempotent (PRAGMA check before ALTER) | yielded to @tkbeheranc |
 
-#9581 was intentionally left for its reporter, who offered to send the PR
-("Happy to send a PR if that approach sounds right") - no competing PR opened
-(per the no-compete rule).
+#9581 was yielded to @ZhuLinsen (PR #9605). All yields posted as comments on
+2026-11-08; per the no-compete rule the 4 PRs (#9627/#9640/#9641/#9643) are not
+pursued and their assignment requests were withdrawn. Only #9620 remains active.
