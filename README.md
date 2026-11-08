@@ -98,3 +98,25 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 <sub>This page covers upstream open-source contributions only.</sub>
 
 </div>
+
+---
+
+## langgraph batch - 2026-11-08 (5 fixes; PRs awaiting issue assignment)
+
+Submitted to langchain-ai/langgraph from AaronG18/langgraph. Per langgraph's
+require-issue-link bot, each PR is closed with `missing-issue-link` until the
+linked issue is assigned to AaronG18; the bot reopens automatically once a
+maintainer assigns the issue. Assignment was requested on every issue; the PR
+state below is verified via API (not yet merged).
+
+| Issue | PR | Scope | Fix | PR state |
+|-------|----|-------|-----|----------|
+| #9603 | #9627 | cli | `langgraph.json` non-string python_version/node_version now raises a clear UsageError instead of AttributeError/TypeError | closed (bot, awaiting assign) |
+| #9591 | #9640 | langgraph | `draw_graph` initializes `deferred_nodes` before the loop so `get_graph()` works with list input_channels (was UnboundLocalError) | closed (bot, awaiting assign) |
+| #9592 | #9641 | prebuilt | `ValidationNode` returns an is_error ToolMessage for unknown tool names instead of KeyError | closed (bot, awaiting assign) |
+| #9620 | #9642 | sdk-py | `AsyncThreadStream.events` releases completed handles from `_open_handles` (was retained until session release) | closed (bot, awaiting assign) |
+| #9561 | #9643 | checkpoint-sqlite | `setup()` is idempotent (PRAGMA check before ALTER) so non-stdlib drivers (sqlcipher) do not leak OperationalError | closed (bot, awaiting assign) |
+
+#9581 was intentionally left for its reporter, who offered to send the PR
+("Happy to send a PR if that approach sounds right") - no competing PR opened
+(per the no-compete rule).
