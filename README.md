@@ -245,3 +245,18 @@ can genuinely approve them. No upstream contribution was submitted in this work;
 the internal working rules (`oss_direction.mdc`) were also updated with the
 audit findings.
 
+### MVP - 2026-11-10 (owned project, PR open, not merged)
+
+The first implementation landed on a `work/` branch of
+`AaronG18/verifiable-contributions` as PR #4, opened by `github-actions[bot]`
+so the owner can genuinely approve it. CI (`verify` and `receipt`) is green and
+the receipt artifact was produced. PR `mergeable_state` is `blocked` with zero
+reviews, so the owner's approval is the only remaining step. Nothing here is
+merged.
+
+The MVP replays the head's test files on the base tree (which lacks the source
+change) and on the head tree, then emits a structured receipt with one of four
+verdicts. Verified locally with 37 hermetic tests plus ruff, and verified in CI.
+Dogfooding the project's own first PR correctly returns `UNTRUSTED`, because a
+verifier cannot certify its own introduction.
+
