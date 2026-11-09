@@ -260,3 +260,25 @@ verdicts. Verified locally with 37 hermetic tests plus ruff, and verified in CI.
 Dogfooding the project's own first PR correctly returns `UNTRUSTED`, because a
 verifier cannot certify its own introduction.
 
+### Governance update - 2026-11-10 (owned project)
+
+PR #4 (the verification-receipt MVP) was merged into `main` as `eaebedd`, and
+PR #6 (policy documentation sync) as `fc8354a`. Both were opened by
+`github-actions[bot]`, passed CI, received an owner approval and were squash
+merged. No direct push to `main` is possible: a probe still returns HTTP 409
+`Changes must be made through a pull request`.
+
+The owner changed the merge policy: the owner's own changes may be approved and
+merged by the agent acting for the owner, provided they still go through a PR
+with passing CI and a recorded approval. The GitHub ruleset was adjusted to make
+that possible in a single-owner repository by removing
+`require_last_push_approval` (which demanded an approval from someone other than
+the last pusher) and the `creation`/`update` rules (which blocked the squash
+merge itself). All other protections remain: 1 approving review, code owner
+review, required `verify` check, linear history, squash-only, no deletion or
+force pushes, and zero bypass actors.
+
+External contributors are still held to a human review by the code owner; the
+agent must not approve or merge someone else's PR. One dependabot PR (#5) is
+left open for that human review.
+
