@@ -299,3 +299,23 @@ open for a human review under the policy added in PR #6.
 
 No new contribution was submitted in this check.
 
+### Supply-chain hardening - 2026-11-10 (owned project)
+
+Dependabot PR #5 (`actions/upload-artifact` v4 to v7) was closed without
+merging, superseded by PR #7 (merged as `436f6f6`). The root cause of that noise
+was our own use of mutable major tags while the security policy said actions
+should be pinned to commit SHAs.
+
+All third-party actions in the owned repository are now pinned to full
+40-character commit SHAs with the release tag in a trailing comment. Dependabot
+version updates for `github-actions` are disabled via
+`open-pull-requests-limit: 0`; per GitHub's options reference that only stops
+version updates, while security updates keep their own fixed limit, and
+`dependabot_security_updates` remains enabled. So CVE fixes still arrive as PRs
+but major-chase PRs stop. `SECURITY.md` and the dependabot config are now
+protected paths, so weakening them marks a receipt `UNTRUSTED`.
+
+Verified after the merge: 40 tests pass, ruff clean, CI green, no tag references
+remain in any workflow, all security toggles still enabled, direct pushes to
+`main` still return HTTP 409, and there are zero open PRs.
+
