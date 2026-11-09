@@ -106,7 +106,7 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 Submitted to langchain-ai/langgraph from AaronG18/langgraph. Status verified via
 API on 2026-11-08. Per the no-compete rule, the 4 issues that already had other
 claimants/PRs were yielded (assignment requests withdrawn, related PRs not
-pursued); only #9620 remains active and awaits maintainer assignment
+pursued); no issue in this batch is now being pursued (see the 2026-11-09 review)
 (PR #9642 auto-reopens once assigned).
 
 | Issue | PR | Scope | Fix | Status |
@@ -114,12 +114,12 @@ pursued); only #9620 remains active and awaits maintainer assignment
 | #9603 | #9627 (not pursued) | cli | non-string python_version/node_version -> clear UsageError | yielded to @Steve-20-ai (#9613) / @JY-M666 (#9616) |
 | #9591 | #9640 (not pursued) | langgraph | deferred_nodes init before draw loop | yielded to @kyo-zzz (fix ready) |
 | #9592 | #9641 (not pursued) | prebuilt | ValidationNode returns is_error ToolMessage | yielded to @JY-M666 |
-| #9620 | #9642 | sdk-py | AsyncThreadStream.events releases completed handles from `_open_handles` | ACTIVE - awaiting maintainer assignment |
+| #9620 | #9642 | sdk-py | AsyncThreadStream.events releases completed handles from `_open_handles` | not pursued: competing claim appeared 2026-11-08 |
 | #9561 | #9643 (not pursued) | checkpoint-sqlite | setup() idempotent (PRAGMA check before ALTER) | yielded to @tkbeheranc |
 
 #9581 was yielded to @ZhuLinsen (PR #9605). All yields posted as comments on
 2026-11-08; per the no-compete rule the 4 PRs (#9627/#9640/#9641/#9643) are not
-pursued and their assignment requests were withdrawn. Only #9620 remains active.
+pursued and their assignment requests were withdrawn. #9620 also gained a competing claim on 2026-11-08, so it is no longer being pursued either.
 
 ---
 
@@ -183,3 +183,40 @@ apparent 44% was almost entirely dependabot (1 real human in 50). The two
 most workable were recharts (27 of last 50 merged PRs from real external
 humans, no CLA/assignment gate, 10 good-first-issues) and strawberry (6 of 50,
 but has a maybe-ai label policy and only stale/insider issues left clean).
+
+
+---
+
+## Full portfolio review - 2026-11-09 (API-verified, no contribution submitted)
+
+Audited every upstream repo where AaronG18 has submitted work. Totals across
+langgraph, litellm, recharts and anyio: **35 pull requests, 0 merged, 4 open,
+31 closed without merging**. Of the closed ones, 30 were auto-closed by
+langgraph's `require-issue-link` bot (`missing-issue-link` label) and 1
+(litellm #49979) was superseded by upstream #50245, which was merged.
+
+| Repo | PRs | Merged | Open | Closed unmerged |
+|------|-----|--------|------|-----------------|
+| langchain-ai/langgraph | 31 | 0 | 1 (#8868) | 30 (all bot-closed) |
+| BerriAI/litellm | 2 | 0 | 1 (#49885) | 1 (superseded) |
+| recharts/recharts | 1 | 0 | 1 (#8192) | 0 |
+| agronholm/anyio | 1 | 0 | 1 (#1471) | 0 |
+
+Why nothing has merged: every one of the 4 open PRs has **0 approving reviews**
+and `mergeable_state` is `blocked` (or `unstable` for recharts). CI is not the
+blocker: #8868 has 66/66 successful check-runs, #1471 has 17/17 (Ubuntu across
+Python 3.11-3.15 and PyPy), #49885 has CLA success, and #8192 has CodeRabbit
+success. The 30 bot-closed langgraph PRs cannot be reopened by us; their linked
+issues were checked and 21 of 22 remain unassigned to AaronG18, so
+`reopen_on_assignment` will not trigger.
+
+The one exception that proves the rule: langgraph **#8868** is the only PR whose
+linked issue (#6798) is assigned to AaronG18, so the bot reopened it and it is
+still open. It has 4 community reviews, 8 comments, 7 commits and was rebased
+and pinged as recently as 2026-11-05. It is the closest to merging.
+
+Fork contribution logs: AaronG18/langgraph has 20, AaronG18/recharts 1,
+AaronG18/anyio 1. AaronG18/litellm had issues disabled; enabled and backfilled
+during this review. Litellm #49865 is now closed; #49805 and #49884 remain open
+and unassigned.
+
