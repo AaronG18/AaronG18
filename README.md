@@ -282,3 +282,20 @@ External contributors are still held to a human review by the code owner; the
 agent must not approve or merge someone else's PR. One dependabot PR (#5) is
 left open for that human review.
 
+### PR status check - 2026-11-10
+
+API-verified update to the portfolio above. `recharts/recharts` PR #8192 is now
+the first of the upstream PRs to receive a maintainer review: @PavelVanecek
+submitted `APPROVED` on 2026-11-09, all CI checks pass, and `mergeable_state`
+is `clean`. It is still open and not merged; the merge itself is the
+maintainer's decision. `agronholm/anyio` #1471 has 17/17 successful check-runs
+but still has no reviews and is `blocked`.
+
+On the owned project, dependabot PR #5 (`actions/upload-artifact` v4 to v7,
+one line in `action.yml`) is the first real external PR to exercise the
+verification receipt. The receipt correctly returned `UNTRUSTED` because
+`action.yml` is a protected path, even though both test runs passed. It stays
+open for a human review under the policy added in PR #6.
+
+No new contribution was submitted in this check.
+
