@@ -220,3 +220,28 @@ AaronG18/anyio 1. AaronG18/litellm had issues disabled; enabled and backfilled
 during this review. Litellm #49865 is now closed; #49805 and #49884 remain open
 and unassigned.
 
+---
+
+## Owned project - 2026-11-09 (not a fork contribution)
+
+This page lists contributions to upstream projects from forks. One new repository
+is deliberately kept out of those tables because it is an owned project rather
+than an upstream contribution: **AaronG18/verifiable-contributions**.
+
+The motivation came from the 2026-11-09 portfolio audit on this page (35 PRs,
+0 merged, 4 open with green CI but no approving review) and from LF Research
+(2026-10-20): 25% of incoming PRs are estimated to be low-quality AI output,
+53% of maintainers disagree that GenAI improved community trust, and only 35%
+of projects have a formal GenAI contribution policy. The project aims to make
+AI-assisted contributions independently verifiable for maintainers.
+
+The repository is public (Apache-2.0). `main` is protected by an active ruleset
+requiring a pull request, one approving review from the code owner, a passing
+`verify` check, linear history and squash-only merges, with zero bypass actors.
+This was verified end to end: a direct push to `main` returned HTTP 409, and a
+merge attempt on an unapproved PR was rejected with `Waiting on code owner
+review from AaronG18`. PRs are opened by a bot workflow so that the human owner
+can genuinely approve them. No upstream contribution was submitted in this work;
+the internal working rules (`oss_direction.mdc`) were also updated with the
+audit findings.
+
