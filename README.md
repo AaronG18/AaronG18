@@ -121,6 +121,30 @@ pursued); only #9620 remains active and awaits maintainer assignment
 2026-11-08; per the no-compete rule the 4 PRs (#9627/#9640/#9641/#9643) are not
 pursued and their assignment requests were withdrawn. Only #9620 remains active.
 
+---
+
+## Two self-verified fixes - 2026-11-09 (both PRs open, not merged)
+
+Following the 2026-11-09 scouting, both selected upstreams turned out to be
+blocked for new fixes: litestar-org/litestar returns
+`pull_request_creation_policy = collaborators_only` (no external PRs since
+2026-10-14), and every recharts issue candidate was either already fixed on
+main, already covered by an open placeholder PR, or in a module another PR was
+editing. Rather than open a competing PR, I verified two new bugs on current
+main myself and fixed them.
+
+| Upstream | PR | Fix | Evidence | State |
+|----------|----|-----|----------|-------|
+| recharts/recharts | #8192 | `getNiceTickValues` used the raw `tickCount` instead of the clamped `count` for infinite domains, so `tickCount=0` threw `RangeError: Invalid array length` and `tickCount=1` returned one tick | Red before (`RangeError` at line 246), green after (82 passed); full `npm test` 9234 passed; eslint and prettier clean | open, mergeable, not merged |
+| agronholm/anyio | #1471 | `install_lazy_importer()`'s `__dir__` listed only `lazy_map`, omitting lazy submodules and deprecated aliases that `__getattr__` resolves | Red before (`'abc' not in dir(anyio)`), green after (6 passed); ruff check/format clean; wider suite 1342 passed vs 1341 baseline with identical environment-only failures | open, mergeable, not merged |
+
+Both PRs carry regression tests that fail without the patch, and both fork
+issue logs were created. Neither has been reviewed or merged. The anyio PR
+includes the required `changelog.d/1471.fixed.rst` fragment; all 82 open anyio
+PRs were checked first to avoid duplicating work (PRs #1368 and #1340 had
+already covered two other bugs I found).
+
+
 Scouting note (2026-11-08, no contribution submitted): surveyed 20 upstream
 repos for merge-friendliness (governance bots, CLA gates, external-contributor
 merge share, open good-first-issue pools). No new PR was opened from this scan.
