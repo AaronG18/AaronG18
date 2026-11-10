@@ -319,3 +319,23 @@ Verified after the merge: 40 tests pass, ruff clean, CI green, no tag references
 remain in any workflow, all security toggles still enabled, direct pushes to
 `main` still return HTTP 409, and there are zero open PRs.
 
+### v0.1.0 released - 2026-11-10 (owned project)
+
+PR #8 was merged as `6da1023`. It closes the false positive recorded in the
+threat model: a base run that fails because of an import or collection error is
+now classified separately and can no longer produce `VERIFIED`. Only a
+recognised assertion failure qualifies; the matching output line is stored and
+re-checked by `vrc check`. Receipt schema is now 2.
+
+A 31-check pre-release audit passed with zero failures (54 tests, ruff clean,
+end-to-end replay, receipt round-trip, tamper detection, action metadata, SHA
+pinning, documentation consistency). The repository also gained `branding` for
+the Marketplace listing, nine discovery topics, and a published Release
+[v0.1.0](https://github.com/AaronG18/verifiable-contributions/releases/tag/v0.1.0).
+
+Marketplace listing itself is **not yet live**: GitHub requires the owner to
+check "Publish this Action to the GitHub Marketplace" in the release UI, accept
+the Marketplace Developer Agreement, choose a category and confirm with 2FA.
+There is no REST API parameter for that step, so it cannot be automated from
+this workspace. Zero open PRs remain.
+
