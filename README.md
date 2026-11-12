@@ -26,13 +26,17 @@ Everything below is work I submitted to an upstream project from my own fork: fi
 
 I also posted QA findings on [#49884](https://github.com/BerriAI/litellm/issues/49884) (Redis circuit breaker stuck in `HALF_OPEN` on a non-connectivity probe failure) and [#49805](https://github.com/BerriAI/litellm/issues/49805). On #49884 another contributor already had a complete patch and tests ready, so I yielded the implementation to them instead of competing.
 
-### langchain-ai/langgraph - September to November 2026 (26 pull requests, 4 issues)
+### langchain-ai/langgraph - September to November 2026 (27 pull requests, 4 issues)
 
 **SDK reliability (November 2026)**
 
 - [#9625](https://github.com/langchain-ai/langgraph/pull/9625) - `thread.output.with_timeout(s)` cancelled the stream's shared `_run_done` future. `_fetch()` passed `_wait_for_run_done()` straight into `asyncio.wait_for`, and that function awaits the shared future directly, so a timeout cancellation propagated into `_run_done` itself: the original `thread.output` then raised `CancelledError` forever and a later run failure was hidden. The fix wraps that wait in `asyncio.shield(...)`, matching the shield pattern already used elsewhere in the same module. One behavioural line plus a regression test that is red before the fix and green after; 80 stream tests pass. Fixes [#9609](https://github.com/langchain-ai/langgraph/issues/9609).
 
 Several of the 25 PRs are re-submissions of the same fix after the upstream issue-link bot closed the first one; the distinct work is grouped below.
+
+**Interrupt handling (November 2026)**
+
+- [#9684](https://github.com/langchain-ai/langgraph/pull/9684) - `interrupt_after="node_one"` matched node names as a substring, so a node literally named `no` was interrupted; `StateGraph.compile()` also raised `TypeError: can only concatenate list (not "str") to list` while joining the interrupt lists. Normalize a lone string (other than the `"*"` wildcard) to a 1-tuple at `StateGraph.compile()`, `Pregel.__init__` and `Pregel._prepare_compile()`, with sync + async regression tests asserting the pause happens after `node_one`. Fixes [#9277](https://github.com/langchain-ai/langgraph/issues/9277). **Closed by the `require-issue-link` bot (not merged)** because #9277 is not assigned to me; assignment requested on the issue.
 
 **State, checkpoint, and store correctness**
 
@@ -87,6 +91,7 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 - `langchain-ai/langgraph` runs a `require-issue-link` bot that closes external PRs on the day they are opened unless the author is assigned to the linked issue. **24 of the 25 September-October PRs were closed by that bot.** [#8868](https://github.com/langchain-ai/langgraph/pull/8868) is the one still open: after I was assigned to [#6798](https://github.com/langchain-ai/langgraph/issues/6798) it was reopened, and community review is complete - a reviewer found a real `state_keys` bug in the v2 streaming handler, I fixed it, and the same reviewer confirmed the fix; two further reviews verified the field filter and the rebase. It is waiting on maintainer review.
 - On `BerriAI/litellm`, [#49885](https://github.com/BerriAI/litellm/pull/49885) is open (BerriAI CLA now signed; awaiting maintainer review; PR description rewritten to plain prose per upstream anti-AI-style guidance) and [#49979](https://github.com/BerriAI/litellm/pull/49979) was closed as superseded.
 - [#9625](https://github.com/langchain-ai/langgraph/pull/9625) was **closed by the `require-issue-link` bot on 2026-11-07** (single commit, 2 files, +34/-1, `mergeable=True`), because [#9609](https://github.com/langchain-ai/langgraph/issues/9609) is not yet assigned to me. I requested assignment on the issue with the root cause and fix; the bot reopens the PR automatically once a maintainer assigns it. No code change is outstanding on my side.
+- [#9684](https://github.com/langchain-ai/langgraph/pull/9684) was **closed by the `require-issue-link` bot on 2026-11-12** (not merged; single commit, 5 files), because [#9277](https://github.com/langchain-ai/langgraph/issues/9277) is not assigned to me. I requested assignment on the issue; the bot reopens the PR automatically once a maintainer assigns it. The PR also adds an optional verification workflow; as with any fork PR, its workflow does not run without maintainer approval, so no verification receipt has been produced. This does not affect the fix or its review. No code change is outstanding on my side.
 
 ---
 
