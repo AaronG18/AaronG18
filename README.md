@@ -229,6 +229,11 @@ and unassigned.
 
 **Status refresh 2026-11-14 (API-verified; supersedes the counts above, which are kept as the 2026-11-09 snapshot):** 37 pull requests across the four repos, 0 merged, 4 open / 33 closed. langchain-ai/langgraph now has 32 PRs (31 closed, only [#8868](https://github.com/langchain-ai/langgraph/pull/8868) open); BerriAI/litellm 2 (both closed); recharts/recharts 2 ([#8192](https://github.com/recharts/recharts/pull/8192) and [#8208](https://github.com/recharts/recharts/pull/8208), both open); agronholm/anyio 1 ([#1471](https://github.com/agronholm/anyio/pull/1471), open). #49885 was closed 2026-11-09 by the superseded bot because #49806 fixed #49805 on main, so the earlier '1 open' litellm figure no longer holds. Linked litellm issues #49805, #49884 and #49865 are all closed now. langgraph #6798 remains assigned to AaronG18 and niilooy; #9609, #9620 and #9277 remain open and unassigned.
 
+**Merge check on the two closest-to-done PRs (2026-11-14): neither has been merged.** All four open PRs are still `open` with `0` failing check-runs (#8192: 63 checks, #8208: 2, #1471: 17, #8868: 66).
+
+- [#8192](https://github.com/recharts/recharts/pull/8192) was APPROVED by PavelVanecek on 2026-11-09 and is `mergeable_state=clean`, but is still open. I asked on 11-11 whether anything was needed; he replied "I'm going through open PRs in my spare time, please wait. If it's approved and without comments then there's nothing left to do." So it is waiting in the maintainer's queue, not on an action from me.
+- [#1471](https://github.com/agronholm/anyio/pull/1471): the maintainer asked for two changes on 11-09 (remove a historical comment in `src/anyio/_lazyimport.py`, and fold the new `dir()` assertions into `test_dir()`), filed CHANGES_REQUESTED, and pinged on 11-11. I pushed both changes in `0136c238f8` on 11-11 (`tests/test_lazyimport.py`: 6 passed) and replied. As of 11-14 there has been no further maintainer review, so the latest review state is still `CHANGES_REQUESTED` and `mergeable_state=blocked`. The requested work is done; the remaining step is the maintainer's re-review.
+
 ---
 
 ## Owned project - 2026-11-09 (not a fork contribution)
