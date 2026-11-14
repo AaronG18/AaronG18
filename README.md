@@ -72,6 +72,7 @@ by an upstream maintainer, who credited me by name in both PR bodies. These are
 | `recharts/recharts` | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **APPROVED**, `mergeable_state=clean`; maintainer asked me to wait |
 | `recharts/recharts` | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | open, no reviews yet |
 | `langchain-ai/langgraph` | [#8868](https://github.com/langchain-ai/langgraph/pull/8868) | `stream_mode="messages"` state-key filter | community review complete, awaiting maintainer review |
+| `run-llama/llama-agents` | [#902](https://github.com/run-llama/llama-agents/pull/902) | `wait_for_event` overwrites a resolved waiter (`llama_index#23861`) | open, regression test added, awaiting review |
 
 ### By upstream project
 
@@ -81,6 +82,9 @@ by an upstream maintainer, who credited me by name in both PR bodies. These are
 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2 | 0 | 0 | both closed as superseded by upstream fixes |
 | [recharts/recharts](https://github.com/recharts/recharts) | 2 | 0 | 2 | self-verified bugs on current `main`, both open |
 | [agronholm/anyio](https://github.com/agronholm/anyio) | 1 | **1** | 0 | first merged upstream PR |
+| [run-llama/llama-agents](https://github.com/run-llama/llama-agents) | 1 | 0 | 1 | `workflows` runtime; fix for `llama_index#23861`, open |
+
+<sub>The "By the numbers" snapshot (37 PRs / 1 merged / 3 open) is API-verified 2026-11-15; `llama-agents#902` is an additional open PR submitted after that snapshot.</sub>
 
 ---
 
