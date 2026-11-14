@@ -1,13 +1,156 @@
 <div align="center">
 
-# AaronG
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=26&duration=3200&pause=900&color=2F81F7&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+AaronG18.;Open-source+contributor+to+LLM+infrastructure.;I+fix+real+bugs%2C+add+regression+tests%2C+and+verify+evidence." alt="Typing SVG" />
 
-**Open-source contributions to LLM infrastructure, made through my forks:**
+**`fix -> test -> measure -> document`**
 
-[AaronG18/langgraph](https://github.com/AaronG18/langgraph) → [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)
-· [AaronG18/litellm](https://github.com/AaronG18/litellm) → [BerriAI/litellm](https://github.com/BerriAI/litellm)
+<sub>Upstream contributions to LLM infrastructure, submitted from my own forks.</sub>
 
-**Sep - Nov 2026**
+</div>
+
+<div align="center">
+
+[![Profile views](https://komarev.com/ghpvc/?username=AaronG18&color=2f81f7&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/AaronG18)
+[![Followers](https://img.shields.io/github/followers/AaronG18?style=for-the-badge&logo=github&color=2f81f7)](https://github.com/AaronG18)
+[![Repositories](https://img.shields.io/badge/PUBLIC%20REPOS-30-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaronG18?tab=repositories)
+
+[![Upstream PRs](https://img.shields.io/badge/UPSTREAM%20PRS-37-2f81f7?style=for-the-badge&logo=git&logoColor=white)](#by-the-numbers)
+[![Merged](https://img.shields.io/badge/MERGED-1-3fb950?style=for-the-badge&logo=git-merge&logoColor=white)](#by-the-numbers)
+[![Open](https://img.shields.io/badge/OPEN-3-d29922?style=for-the-badge&logo=git-pull-request&logoColor=white)](#by-the-numbers)
+
+[![Latest release](https://img.shields.io/github/v/release/AaronG18/verifiable-contributions?style=for-the-badge&color=a371f7&label=VERIFIABLE-CONTRIBUTIONS)](https://github.com/AaronG18/verifiable-contributions/releases)
+[![Verify CI](https://img.shields.io/github/actions/workflow/status/AaronG18/verifiable-contributions/verify.yml?branch=main&style=for-the-badge&label=VERIFY)](https://github.com/AaronG18/verifiable-contributions/actions/workflows/verify.yml)
+[![License](https://img.shields.io/github/license/AaronG18/verifiable-contributions?style=for-the-badge&color=8b949e)](https://github.com/AaronG18/verifiable-contributions/blob/main/LICENSE)
+
+</div>
+
+---
+
+## By the numbers
+
+<table>
+<tr>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/37-UPSTREAM%20PRS-2f81f7?style=for-the-badge" alt="37 upstream PRs"/><br/><sub>across 4 upstream projects</sub></td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/1-MERGED-3fb950?style=for-the-badge" alt="1 merged"/><br/><sub><a href="https://github.com/agronholm/anyio/pull/1471">anyio #1471</a>, 2026-11-13</sub></td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/3-OPEN-d29922?style=for-the-badge" alt="3 open"/><br/><sub>#8192, #8208, #8868</sub></td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/7-RELEASES-a371f7?style=for-the-badge" alt="7 releases"/><br/><sub>verifiable-contributions</sub></td>
+</tr>
+</table>
+
+<sub>All counts API-verified on **2026-11-15**. These are point-in-time snapshots; the badges above (followers, stars, release, license, CI) update themselves.</sub>
+
+---
+
+## Open-source contributions
+
+> A note on how to read this page: most of these PRs were closed by an upstream
+> issue-link bot, not rejected on technical grounds. Status words are literal.
+> The one merged PR is marked as such; credit for an idea that landed under
+> someone else's PR is labelled separately.
+
+### Merged
+
+| Upstream | Pull request | What it fixed | Result |
+| --- | --- | --- | --- |
+| `agronholm/anyio` | [#1471](https://github.com/agronholm/anyio/pull/1471) | `install_lazy_importer()` returned `dir()` without lazy submodules or deprecated aliases | **Merged 2026-11-13** by `agronholm`, commit [`4d53ea15`](https://github.com/agronholm/anyio/commit/4d53ea15daec445b2bf368285f6ef60297b8f4ab) |
+
+### Idea credited in upstream `main`
+
+Two performance fixes I proposed in bot-closed PRs were implemented and merged
+by an upstream maintainer, who credited me by name in both PR bodies. These are
+**not merged PRs of mine** — they are an @ credit for the idea.
+
+| Upstream PR | Credit | My original proposal |
+| --- | --- | --- |
+| [#9629](https://github.com/langchain-ai/langgraph/pull/9629) `perf: find untracked and delta channels once per run` | "@AaronG18 proposed the `UntrackedValue` half of this in #8858" | [#8858](https://github.com/langchain-ai/langgraph/pull/8858) |
+| [#9630](https://github.com/langchain-ai/langgraph/pull/9630) `perf: check only failed futures for the runner stop condition` | "@AaronG18 (#8860) ... proposed checking fewer futures here" | [#8860](https://github.com/langchain-ai/langgraph/pull/8860) |
+
+### Open
+
+| Upstream | Pull request | Area | State |
+| --- | --- | --- | --- |
+| `recharts/recharts` | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **APPROVED**, `mergeable_state=clean`; maintainer asked me to wait |
+| `recharts/recharts` | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | open, no reviews yet |
+| `langchain-ai/langgraph` | [#8868](https://github.com/langchain-ai/langgraph/pull/8868) | `stream_mode="messages"` state-key filter | community review complete, awaiting maintainer review |
+
+### By upstream project
+
+| Project | PRs | Merged | Open | Notes |
+| --- | --- | --- | --- | --- |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 32 | 0 | 1 | `require-issue-link` bot closes external PRs until the linked issue is assigned |
+| [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2 | 0 | 0 | both closed as superseded by upstream fixes |
+| [recharts/recharts](https://github.com/recharts/recharts) | 2 | 0 | 2 | self-verified bugs on current `main`, both open |
+| [agronholm/anyio](https://github.com/agronholm/anyio) | 1 | **1** | 0 | first merged upstream PR |
+
+---
+
+## Owned project: verifiable-contributions
+
+<div align="center">
+
+[![Stars](https://img.shields.io/github/stars/AaronG18/verifiable-contributions?style=for-the-badge&logo=github&color=ffd866)](https://github.com/AaronG18/verifiable-contributions)
+[![Release](https://img.shields.io/github/v/release/AaronG18/verifiable-contributions?style=for-the-badge&color=a371f7)](https://github.com/AaronG18/verifiable-contributions/releases)
+[![License](https://img.shields.io/github/license/AaronG18/verifiable-contributions?style=for-the-badge)](https://github.com/AaronG18/verifiable-contributions/blob/main/LICENSE)
+
+</div>
+
+**[AaronG18/verifiable-contributions](https://github.com/AaronG18/verifiable-contributions)**
+is a GitHub Action born from the portfolio problem on this page: CI tells a
+reviewer whether tests pass on the head commit, but not whether the PR's tests
+actually exercise the change. It replays the PR's tests against both the base
+tree and the head tree from a policy read only from the base ref, and emits a
+tamper-evident receipt (`VERIFIED` / `NEEDS_EVIDENCE` / `NEEDS_RERUN` /
+`UNTRUSTED`). `vrc audit` goes further and mutation-tests each change point,
+reporting which parts of a diff the suite actually observes.
+
+Built in the open with a red-to-green regression test for each fix. Seven
+releases from `v0.1.0` to `v0.5.0`; `v0.4.0` added monorepo support and local
+policy preflight after a real upstream integration attempt exposed the gaps, and
+`v0.5.0` added the per-change-point audit. It is adopted in my own
+[enterprise-rag-service](https://github.com/AaronG18/enterprise-rag-service)
+(PR [#156](https://github.com/AaronG18/enterprise-rag-service/pull/156)).
+
+The honest boundary: a receipt is a reproducible measurement, not proof that a
+test asserts the right thing. A locally generated receipt is a self-check, not a
+CI attestation. On a mature upstream project with a healthy CI matrix, an
+unsolicited third-party action is a net cost — so I do not attach it to upstream
+contribution PRs.
+
+---
+
+## Activity
+
+<div align="center">
+
+[![GitHub streak](https://streak-stats.demolab.com/?user=AaronG18&theme=tokyonight&hide_border=true)](https://github.com/AaronG18)
+
+</div>
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/)
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=py,ts,git,github,githubactions,linux,bash,json,toml,md&theme=dark" alt="Tech stack" />
+
+</div>
+
+---
+
+## Contact
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-@AaronG18-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaronG18)
+[![Email](https://img.shields.io/badge/Email-aaron18g@outlook.com-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:aaron18g@outlook.com)
+
+<sub>This page covers upstream open-source contributions only. Detailed, dated work log below.</sub>
 
 </div>
 
@@ -85,6 +228,8 @@ Several of the 25 PRs are re-submissions of the same fix after the upstream issu
 ---
 
 ## Status, stated plainly
+
+**Status refresh 2026-11-15 (API-verified):** 37 upstream PRs, **1 merged**, 3 open, 33 closed without merging. [agronholm/anyio#1471](https://github.com/agronholm/anyio/pull/1471) was merged by `agronholm` at 2026-11-13 20:51:47Z (merge commit `4d53ea15` on `master`, head `0136c238f8`), after he APPROVED it at 20:50. That approval came within three minutes of my `@agronholm` note pointing out that the requested changes were done: the code had been ready since 11-11, but nobody had been notified. The remaining open three are [recharts#8192](https://github.com/recharts/recharts/pull/8192) (APPROVED, `clean`, maintainer asked me to wait), [recharts#8208](https://github.com/recharts/recharts/pull/8208) (open, no reviews) and [langgraph#8868](https://github.com/langchain-ai/langgraph/pull/8868) (community review complete, maintainers silent). No other state changed; the linked langgraph issues #9609, #9620 and #9277 remain open and unassigned. The `Full portfolio review - 2026-11-09` table further below is kept as a dated snapshot.
 
 **One upstream pull request of mine has been merged.** [agronholm/anyio#1471](https://github.com/agronholm/anyio/pull/1471) was merged on 2026-11-13 (commit `4d53ea15`), the first merge in this portfolio. Two other *proposed fixes* reached langgraph `main` under another author's PRs ([#9629](https://github.com/langchain-ai/langgraph/pull/9629), [#9630](https://github.com/langchain-ai/langgraph/pull/9630)) with an @ credit; those are credit for the idea, not merged PRs of mine.
 
