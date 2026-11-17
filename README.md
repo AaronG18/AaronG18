@@ -95,7 +95,7 @@ ready on assignment.</sub>
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=py,ts,git,githubactions,linux,bash,json,toml,md&theme=dark" alt="Tech stack" />
+<img src="https://skillicons.dev/icons?i=py,ts,git,githubactions,linux,bash,md&theme=dark" alt="Tech stack" />
 
 </div>
 
