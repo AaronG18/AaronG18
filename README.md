@@ -25,7 +25,7 @@
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/51-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="51 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/134-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/176-COMMITS-8b949e?style=for-the-badge&logo=git" alt="176 commits"/></a><br/><sub>commits</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/%2B43.9k%20%2F%20-32.6k-LINES%20CHANGED-a371f7?style=for-the-badge" alt="+43.9k / -32.6k lines changed"/></a><br/><sub>lines changed</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B43.9k%20%2F%20--32.6k-a371f7?style=for-the-badge" alt="+43.9k / -32.6k lines changed"/></a><br/><sub>code changes</sub></td>
 </tr>
 </table>
 
