@@ -21,10 +21,10 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/96-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="95 pull requests"/></a><br/><sub>authored</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/52-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="51 merged"/></a><br/><sub>merged</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/99-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="95 pull requests"/></a><br/><sub>authored</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/55-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="51 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/134-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/179-COMMITS-8b949e?style=for-the-badge&logo=git" alt="176 commits"/></a><br/><sub>commits</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/183-COMMITS-8b949e?style=for-the-badge&logo=git" alt="176 commits"/></a><br/><sub>commits</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B43.9k%20%2F%20--32.6k-a371f7?style=for-the-badge" alt="+43.9k / -32.6k lines changed"/></a><br/><sub>code changes</sub></td>
 </tr>
 </table>
@@ -53,7 +53,7 @@ document, and `create_agent` has one global prompt. `langgraph-harness` fills th
 `@harnessed(harness)` binds a Markdown HARNESS to one node, exposes it via
 `current_harness()`, validates the node's output against `MUST` / `MUST NOT` rules, and
 `harness_gate()` routes violations to a repair node. LLM-agnostic; verified end-to-end
-with a local Ollama model. Published as `langgraph-harness 0.1.3` on PyPI, 37 tests pass.
+with a local Ollama model. Published as `langgraph-harness 0.2.0` on PyPI, 56 tests pass.
 
 ### [verifiable-contributions](https://github.com/AaronG18/verifiable-contributions) — prove tests exercise a diff
 [![License](https://img.shields.io/github/license/AaronG18/verifiable-contributions?style=for-the-badge&color=8b949e)](https://github.com/AaronG18/verifiable-contributions/blob/main/LICENSE)
