@@ -10,13 +10,10 @@
 
 <div align="center">
 
-[![Profile views](https://komarev.com/ghpvc/?username=AaronG18&color=2f81f7&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/AaronG18)
-[![Followers](https://img.shields.io/github/followers/AaronG18?style=for-the-badge&logo=github&color=2f81f7)](https://github.com/AaronG18)
 [![GitHub](https://img.shields.io/badge/GitHub-@AaronG18-181717?style=for-the-badge&logo=github)](https://github.com/AaronG18)
 
 [![verifiable-contributions](https://img.shields.io/github/v/release/AaronG18/verifiable-contributions?style=for-the-badge&color=a371f7&label=VERIFIABLE-CONTRIBUTIONS)](https://github.com/AaronG18/verifiable-contributions)
 [![langgraph-harness](https://img.shields.io/github/v/release/AaronG18/langgraph-harness?style=for-the-badge&color=a371f7&label=LANGGRAPH-HARNESS)](https://github.com/AaronG18/langgraph-harness)
-[![Verify CI](https://img.shields.io/github/actions/workflow/status/AaronG18/verifiable-contributions/verify.yml?branch=main&style=for-the-badge&label=VERIFY)](https://github.com/AaronG18/verifiable-contributions/actions/workflows/verify.yml)
 
 </div>
 
@@ -45,7 +42,6 @@ document, and `create_agent` has one global prompt. `langgraph-harness` fills th
 with a local Ollama model. Published as `langgraph-harness 0.1.2` on PyPI, 27 tests pass.
 
 ### [verifiable-contributions](https://github.com/AaronG18/verifiable-contributions) — prove tests exercise a diff
-[![Release](https://img.shields.io/github/v/release/AaronG18/verifiable-contributions?style=for-the-badge&color=a371f7)](https://github.com/AaronG18/verifiable-contributions/releases)
 [![License](https://img.shields.io/github/license/AaronG18/verifiable-contributions?style=for-the-badge&color=8b949e)](https://github.com/AaronG18/verifiable-contributions/blob/main/LICENSE)
 
 A GitHub Action born from this portfolio's own problem: CI says tests pass on the head
