@@ -91,7 +91,6 @@ ready on assignment.</sub>
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/AaronG18/verifiable-contributions/verify.yml?branch=main&style=for-the-badge&label=ACTIONS)](https://github.com/features/actions)
 
 <br/>
 
