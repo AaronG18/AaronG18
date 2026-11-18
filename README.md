@@ -21,15 +21,15 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/105-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="95 pull requests"/></a><br/><sub>authored</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/61-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="51 merged"/></a><br/><sub>merged</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/105-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="105 pull requests"/></a><br/><sub>authored</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/61-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="61 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/134-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/192-COMMITS-8b949e?style=for-the-badge&logo=git" alt="176 commits"/></a><br/><sub>commits</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B43.9k%20%2F%20--32.6k-a371f7?style=for-the-badge" alt="+43.9k / -32.6k lines changed"/></a><br/><sub>code changes</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/193-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B45.7k%20%2F%20--32.7k-a371f7?style=for-the-badge" alt="+45.7k / -32.7k lines changed"/></a><br/><sub>code changes</sub></td>
 </tr>
 </table>
 
-<sub>Snapshot **API-verified 2026-11-18** across all repositories, including PRs to my own projects. Click any number to open the live, per-item search.</sub>
+<sub>Snapshot **API-verified 2026-11-18** across all repositories, including PRs to my own projects; only **2** of the merged PRs are upstream merges (see the table below). Click any number to open the live, per-item search.</sub>
 
 ---
 
@@ -79,7 +79,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | Upstream | PR | Area | State |
 | --- | --- | --- | --- |
 | [anyio](https://github.com/agronholm/anyio) | [#1471](https://github.com/agronholm/anyio/pull/1471) | lazy importer `dir()` missed submodules | **merged 2026-11-13** (`4d53ea15`) |
-| [recharts](https://github.com/recharts/recharts) | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **approved**, maintainer asked to wait |
+| [recharts](https://github.com/recharts/recharts) | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **merged 2026-11-17** (`548327520b0d`) |
 | [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | open |
 | [langgraph](https://github.com/langchain-ai/langgraph) | [#8868](https://github.com/langchain-ai/langgraph/pull/8868) | `stream_mode="messages"` state-key filter | open, community-reviewed |
 | [llama-agents](https://github.com/run-llama/llama-agents) | [#902](https://github.com/run-llama/llama-agents/pull/902) | `wait_for_event` overwrite of resolved waiter | open, regression test added |
