@@ -21,7 +21,7 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/112-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/113-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/62-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="61 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/135-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/201-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
@@ -82,6 +82,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | [recharts](https://github.com/recharts/recharts) | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **merged 2026-11-17** (`548327520b0d`) |
 | [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | **merged 2026-11-18** (`070b2f790002`) |
 | [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | open, CI running |
+| [crewAI](https://github.com/crewAIInc/crewAI) | [#9562](https://github.com/crewAIInc/crewAI/pull/9562) | async file processing swallowed strict-mode errors | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
 | [llama-models](https://github.com/meta-llama/llama-models) | [#543](https://github.com/meta-llama/llama-models/pull/543) | Llama 3 tool parser raised on ordinary replies | open; CLA signature required |
