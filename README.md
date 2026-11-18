@@ -21,10 +21,10 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/110-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/111-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/62-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="61 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/135-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/199-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/201-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B45.9k%20%2F%20--32.7k-a371f7?style=for-the-badge" alt="+45.9k / -32.7k lines changed"/></a><br/><sub>code changes</sub></td>
 </tr>
 </table>
@@ -84,6 +84,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
+| [transformers](https://github.com/huggingface/transformers) | [#50933](https://github.com/huggingface/transformers/pull/50933) | empty corpus rows produced extra labels | open, CI running |
 | [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13888](https://github.com/pydantic/pydantic-ai/issues/13888) | unbracketed IPv6 `Host` header on default port | PR ready; awaiting assignment |
 | [langgraph](https://github.com/langchain-ai/langgraph) | [#8868](https://github.com/langchain-ai/langgraph/pull/8868) | `stream_mode="messages"` state-key filter | open, community-reviewed |
 | [llama-agents](https://github.com/run-llama/llama-agents) | [#902](https://github.com/run-llama/llama-agents/pull/902) | `wait_for_event` overwrite of resolved waiter | open, regression test added |
