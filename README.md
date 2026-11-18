@@ -80,7 +80,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | --- | --- | --- | --- |
 | [anyio](https://github.com/agronholm/anyio) | [#1471](https://github.com/agronholm/anyio/pull/1471) | lazy importer `dir()` missed submodules | **merged 2026-11-13** (`4d53ea15`) |
 | [recharts](https://github.com/recharts/recharts) | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **merged 2026-11-17** (`548327520b0d`) |
-| [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | **approved**, queued on maintainer |
+| [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | **merged 2026-11-18** (`070b2f790002`) |
 | [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
