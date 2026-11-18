@@ -83,7 +83,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | **approved**, queued on maintainer |
 | [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
-| [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13889](https://github.com/pydantic/pydantic-ai/pull/13889) | unbracketed IPv6 `Host` header on default port | open, CI running |
+| [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13888](https://github.com/pydantic/pydantic-ai/issues/13888) | unbracketed IPv6 `Host` header on default port | PR ready; awaiting assignment |
 | [langgraph](https://github.com/langchain-ai/langgraph) | [#8868](https://github.com/langchain-ai/langgraph/pull/8868) | `stream_mode="messages"` state-key filter | open, community-reviewed |
 | [llama-agents](https://github.com/run-llama/llama-agents) | [#902](https://github.com/run-llama/llama-agents/pull/902) | `wait_for_event` overwrite of resolved waiter | open, regression test added |
 
