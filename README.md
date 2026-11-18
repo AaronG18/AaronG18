@@ -21,10 +21,10 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/113-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/114-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/62-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="61 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/135-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/201-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/204-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B45.9k%20%2F%20--32.7k-a371f7?style=for-the-badge" alt="+45.9k / -32.7k lines changed"/></a><br/><sub>code changes</sub></td>
 </tr>
 </table>
@@ -85,6 +85,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9562](https://github.com/crewAIInc/crewAI/pull/9562) | async file processing swallowed strict-mode errors | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
+| [gemma](https://github.com/google-deepmind/gemma) | [#833](https://github.com/google-deepmind/gemma/pull/833) | Gemma3 stopped generation on `<unused44>` | open; Google CLA required |
 | [llama-models](https://github.com/meta-llama/llama-models) | [#543](https://github.com/meta-llama/llama-models/pull/543) | Llama 3 tool parser raised on ordinary replies | open; CLA signature required |
 | [transformers](https://github.com/huggingface/transformers) | [#50933](https://github.com/huggingface/transformers/pull/50933) | empty corpus rows produced extra labels | open, CI running |
 | [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13888](https://github.com/pydantic/pydantic-ai/issues/13888) | unbracketed IPv6 `Host` header on default port | PR ready; awaiting assignment |
