@@ -82,14 +82,14 @@ Statuses are literal and API-checked **2026-11-18**.
 | [recharts](https://github.com/recharts/recharts) | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **merged 2026-11-17** (`548327520b0d`) |
 | [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | **merged 2026-11-18** (`070b2f790002`) |
 | [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | closed (duplicate of #8076 policy) |
-| [crewAI](https://github.com/crewAIInc/crewAI) | [#9562](https://github.com/crewAIInc/crewAI/pull/9562) | async file processing swallowed strict-mode errors | open, CI running |
-| [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
-| [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
-| [litellm](https://github.com/BerriAI/litellm) | [#52632](https://github.com/BerriAI/litellm/pull/52632) | logging recorded `builtins.input` | open, CI running |
+| [crewAI](https://github.com/crewAIInc/crewAI) | [#9562](https://github.com/crewAIInc/crewAI/pull/9562) | async file processing swallowed strict-mode errors | closed with its issue |
+| [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | closed with its issue (not planned) |
+| [crewAI](https://github.com/crewAIInc/crewAI) | [#9574](https://github.com/crewAIInc/crewAI/pull/9574) | `kickoff()` ignored `max_execution_time` | open, CI running (supersedes #9539) |
+| [litellm](https://github.com/BerriAI/litellm) | [#52632](https://github.com/BerriAI/litellm/pull/52632) | logging recorded `builtins.input` | closed, duplicate of #52553 |
 | [gemma](https://github.com/google-deepmind/gemma) | [#833](https://github.com/google-deepmind/gemma/pull/833) | Gemma3 stopped generation on `<unused44>` | open, 6/6 checks green |
 | [llama-models](https://github.com/meta-llama/llama-models) | [#543](https://github.com/meta-llama/llama-models/pull/543) | Llama 3 tool parser raised on ordinary replies | open; CLA signature required |
-| [transformers](https://github.com/huggingface/transformers) | [#50933](https://github.com/huggingface/transformers/pull/50933) | empty corpus rows produced extra labels | open, CI running |
-| [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13888](https://github.com/pydantic/pydantic-ai/issues/13888) | unbracketed IPv6 `Host` header on default port | PR ready; awaiting assignment |
+| [transformers](https://github.com/huggingface/transformers) | [#50933](https://github.com/huggingface/transformers/pull/50933) | empty corpus rows produced extra labels | closed, labelled `Code agent slop` |
+| [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13888](https://github.com/pydantic/pydantic-ai/issues/13888) | unbracketed IPv6 `Host` header on default port | issue closed by maintainer |
 | [langgraph](https://github.com/langchain-ai/langgraph) | [#8868](https://github.com/langchain-ai/langgraph/pull/8868) | `stream_mode="messages"` state-key filter | open, community-reviewed |
 | [llama-agents](https://github.com/run-llama/llama-agents) | [#902](https://github.com/run-llama/llama-agents/pull/902) | `wait_for_event` overwrite of resolved waiter | open, regression test added |
 
