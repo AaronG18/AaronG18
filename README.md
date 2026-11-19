@@ -86,7 +86,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
 | [litellm](https://github.com/BerriAI/litellm) | [#52632](https://github.com/BerriAI/litellm/pull/52632) | logging recorded `builtins.input` | open, CI running |
-| [gemma](https://github.com/google-deepmind/gemma) | [#833](https://github.com/google-deepmind/gemma/pull/833) | Gemma3 stopped generation on `<unused44>` | open; Google CLA required |
+| [gemma](https://github.com/google-deepmind/gemma) | [#833](https://github.com/google-deepmind/gemma/pull/833) | Gemma3 stopped generation on `<unused44>` | open, 6/6 checks green |
 | [llama-models](https://github.com/meta-llama/llama-models) | [#543](https://github.com/meta-llama/llama-models/pull/543) | Llama 3 tool parser raised on ordinary replies | open; CLA signature required |
 | [transformers](https://github.com/huggingface/transformers) | [#50933](https://github.com/huggingface/transformers/pull/50933) | empty corpus rows produced extra labels | open, CI running |
 | [pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#13888](https://github.com/pydantic/pydantic-ai/issues/13888) | unbracketed IPv6 `Host` header on default port | PR ready; awaiting assignment |
