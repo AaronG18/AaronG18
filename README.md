@@ -21,10 +21,10 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/114-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/116-PULL%20REQUESTS-2f81f7?style=for-the-badge&logo=git" alt="107 pull requests"/></a><br/><sub>authored</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/62-MERGED-3fb950?style=for-the-badge&logo=git-merge" alt="61 merged"/></a><br/><sub>merged</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Aissue+author%3AAaronG18&type=issues"><img src="https://img.shields.io/badge/135-ISSUES%20OPENED-d29922?style=for-the-badge&logo=github" alt="134 issues opened"/></a><br/><sub>issues opened</sub></td>
-<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/205-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
+<td align="center" width="20%"><a href="https://github.com/search?q=author%3AAaronG18&type=commits"><img src="https://img.shields.io/badge/206-COMMITS-8b949e?style=for-the-badge&logo=git" alt="193 commits"/></a><br/><sub>commits</sub></td>
 <td align="center" width="20%"><a href="https://github.com/search?q=is%3Apr+author%3AAaronG18&type=pullrequests"><img src="https://img.shields.io/badge/CODE%20CHANGES-%2B45.9k%20%2F%20--32.7k-a371f7?style=for-the-badge" alt="+45.9k / -32.7k lines changed"/></a><br/><sub>code changes</sub></td>
 </tr>
 </table>
@@ -81,7 +81,7 @@ Statuses are literal and API-checked **2026-11-18**.
 | [anyio](https://github.com/agronholm/anyio) | [#1471](https://github.com/agronholm/anyio/pull/1471) | lazy importer `dir()` missed submodules | **merged 2026-11-13** (`4d53ea15`) |
 | [recharts](https://github.com/recharts/recharts) | [#8192](https://github.com/recharts/recharts/pull/8192) | `getNiceTickValues()` infinite domains | **merged 2026-11-17** (`548327520b0d`) |
 | [recharts](https://github.com/recharts/recharts) | [#8208](https://github.com/recharts/recharts/pull/8208) | `rangeStep()` infinite-loop cap | **merged 2026-11-18** (`070b2f790002`) |
-| [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | open, CI running |
+| [recharts](https://github.com/recharts/recharts) | [#8254](https://github.com/recharts/recharts/pull/8254) | `allowDecimals=false` ticks outside the domain | closed (duplicate of #8076 policy) |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9562](https://github.com/crewAIInc/crewAI/pull/9562) | async file processing swallowed strict-mode errors | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9561](https://github.com/crewAIInc/crewAI/pull/9561) | provider fetch overwrote `SSL_CERT_FILE` | open, CI running |
 | [crewAI](https://github.com/crewAIInc/crewAI) | [#9539](https://github.com/crewAIInc/crewAI/pull/9539) | `kickoff()` ignored `max_execution_time` | open, CI running |
